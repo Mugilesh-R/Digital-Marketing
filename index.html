@@ -139,15 +139,18 @@
       gap: 30px;
     }
     .service-item {
-      background: #fff;
-      padding: 30px;
-      border-left: 5px solid #ff4b2b;
-      border-right: 5px solid #ff4b2b;
-      border-radius: 10px;
-      box-shadow: 0 8px 16px rgba(0,0,0,0.07);
-      flex: 0 1 calc(50% - 30px);
-      max-width: 100%;
-    }
+  background: #fff;
+  padding: 30px;
+  border-left: 5px solid #ff4b2b;
+  border-left: 5px solid #ff4b2b;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.07);
+  flex: 1 1 300px; /* minimum width for responsiveness */
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
     .service-item img {
   max-width: 100%;
   border-radius: 10px;

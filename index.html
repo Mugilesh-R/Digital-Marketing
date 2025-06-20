@@ -2,318 +2,432 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>BRAINWAYSTECH LLP - Digital Marketing</title>
+  <title>Digital Marketing Services | BrainwaysTech LLP</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Bootstrap CSS & Font Awesome -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <link rel="icon" href="images/favicon.png" type="image/png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="icon" href="images/favicon.png">
 
   <style>
     body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       margin: 0;
-      padding: 0;
-      background: #fff8f1;
-      color: #333;
+      padding-top: 70px;
+      font-family: 'Segoe UI', sans-serif;
     }
-    .main-header {
-      background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), transparent);
-      padding: 15px 30px;
-      position: relative;
-      z-index: 999;
+
+    .transparent-navbar {
+      background-color: rgba(0, 0, 0, 0.5);
+      color: white;
     }
-    .main-header .logo {
-      height: 100px;
-    }
-    .company-name {
-      font-size: 16px;
-      font-weight: bold;
-      color: black;
-      white-space: nowrap;
-    }
-    .main-header .text-light{
-        color: #000;
-    }
-    .main-header nav a {
-      color: #fff;
-      text-decoration: none;
-      margin-left: 25px;
-      font-weight: 500;
-      transition: 0.3s;
-    }
-    .main-header nav a:hover {
-      color: black;
-    }
-    .cta-btn {
-      background-color: orangered;
-      padding: 10px 20px;
-      border-radius: 30px;
-      color: #fff !important;
-      font-weight: bold;
-      transition: 0.3s ease-in-out;
-    }
-    .cta-btn:hover {
-      background-color: black;
-      text-decoration: none;
-    }
+
     .hero {
+     
+      height: 100vh;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       text-align: center;
-      padding: 100px 20px;
-      background: linear-gradient(to right, #fff4e6, #ffe8cc);
-    }
-    .hero {
-        height: 100vh;
-        padding: 0;
-        overflow: hidden;
-        position: relative;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+      position: relative;
     }
     .hero-video {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        z-index: 0;
-    }
-    .hero-overlay {
-        position: relative;
-        z-index: 2;
-        background: rgba(0, 0, 0, 0.6); /* For contrast */
-        padding: 60px 20px;
-        border-radius: 15px;
-        max-width: 800px;
-        margin: 0 auto;
-    }
-
-    .hero-overlay h1 {
-  font-size: 48px;
-  font-weight: bold;
-  color: #ffc107;
-}
-
-.hero-overlay p {
-  font-size: 20px;
-  color: #fff;
-  margin: 15px 0 25px;
-}
-    .hero h1 {
-      font-size: 48px;
-      color: orangered ;
-      font-weight: bold;
-    }
-    .hero p {
-      font-size: 20px;
-      margin-top: 10px;
-    }
-    .cta-buttons a {
-      padding: 14px 35px;
-      margin: 10px;
-      text-decoration: none;
-      background: yellow;
-      color: black;
-      border-radius: 50px;
-      transition: 0.3s;
-      font-weight: 600;
-      box-shadow: 0 5px 10px rgba(0,0,0,0.1);
-    }
-    .cta-buttons a:hover {
-      background: #c82333;
-    }
-    .services, .contact, .about {
-      padding: 60px 20px;
-    }
-    .services h2, .contact h2, .about h2 {
-      text-align: center;
-      font-size: 36px;
-      color: #b80000;
-      margin-bottom: 40px;
-    }
-    .services-grid {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 30px;
-    }
-    .service-item {
-  background: #fff;
-  padding: 30px;
-  border-left: 5px solid #ff4b2b;
-  border-left: 5px solid #ff4b2b;
-  border-radius: 10px;
-  box-shadow: 0 8px 16px rgba(0,0,0,0.07);
-  flex: 1 1 300px; /* minimum width for responsiveness */
-  max-width: 100%;
+  position: relative;
+  height: 100vh; /* Full height of viewport */
+  overflow: hidden;
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-    .service-item img {
-  max-width: 100%;
-  border-radius: 10px;
-  margin-bottom: 15px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-    .service-item h3 {
-      color: #ff4b2b;
-      font-weight: 600;
-    }
-    .google-form-btn {
-      display: block;
-      width: fit-content;
-      margin: 0 auto;
-      padding: 14px 28px;
-      background-color: yellow;
-      color: black;
-      border-radius: 30px;
-      text-decoration: none;
-      font-weight: bold;
-      transition: background 0.3s ease-in-out;
-    }
-    .google-form-btn:hover {
-      background-color: yellow;
-    }
-    footer {
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), transparent);
-      padding: 15px 30px;
-      position: relative;
-      z-index: 999;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
-footer .social-links a {
+.hero-video video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+  z-index: -1;
+}
+
+.video-content {
+  position: relative;
+  z-index: 2;
   color: white;
-  margin: 0 10px;
-  display: inline-block;
-  transition: color 0.3s;
+  padding: 20px;
+  max-width: 90%;
 }
 
-footer .social-links a:hover {
-  color: yellow;
+.video-content h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: orangered;
 }
 
+.video-content p {
+  font-size: 1.1rem;
+  color:black;
+}
+
+@media (min-width: 768px) {
+  .video-content h1 {
+    font-size: 3rem;
+  }
+  .video-content p {
+    font-size: 1.25rem;
+  }
+}
+
+    .hero h1 {
+      font-size: 3rem;
+      font-weight: bold;
+    }
+
+    .hero p {
+      font-size: 1.3rem;
+      margin-top: 1rem;
+    }
+    
+    .service-box {
+      background-color: #fff;
+      border: 2px solid #ffc10733;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+      padding: 25px;
+      transition: 0.3s;
+    }
+
+    .service-box:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    }
+    .border-orange {
+  border: 6px solid #ffc107;
+}
+
+.testimonial-img-wrapper {
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-size: 100% 100%;
+  width: 40px;
+  height: 40px;
+}
+
+
+    footer {
+      background-color: rgba(0, 0, 0, 0.6);
+      color: #eee;
+      padding: 30px 0;
+      text-align: center;
+    }
+
+    footer .social i {
+      margin: 0 10px;
+      font-size: 20px;
+      color: #ccc;
+      transition: 0.3s;
+    }
+
+    footer .social i:hover {
+      color: #ffc107;
+    }
+
+    .btn-whatsapp {
+      background-color: #25D366;
+      color: white;
+    }
+
+    .btn-whatsapp:hover {
+      background-color: #1da851;
+      color: white;
+    }
+
+    h2.text-orange {
+      color: orange;
+    }
   </style>
 </head>
 <body>
 
-  <header class="main-header">
-    <div class="container d-flex align-items-center justify-content-between flex-wrap">
-      <div class="d-flex align-items-center">
-        <img src="images/logo.png" alt="BRAINWAYSTECH LLP Logo" class="logo">
-        <div class="ml-3">
-          <h1 class="company-name mb-0">BRAINWAYSTECH LLP</h1>
-          <small class="text-light" style="font-size: 12px;">UNLOCKING FUTURES WITH AI</small>
-        </div>
-      </div>
-      <nav class="d-flex align-items-center">
-        <a href="#about">About Us</a>
-        <a href="#services" >Services</a>
-        <a href="#contact" class="cta-btn ml-3">Contact Us</a>
-      </nav>
+<!-- Header -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top transparent-navbar">
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center" href="#">
+      <img src="images/logo.png" width="60" height="60" class="mr-2" alt="Logo">
+      BrainwaysTech LLP
+    </a>
+    <button class="navbar-toggler" data-toggle="collapse" data-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item"><a href="#services" class="nav-link" style="color: white;">Services</a></li>
+        <li class="nav-item"><a href="#samples" class="nav-link" style="color: white;">Samples</a></li>
+        <li class="nav-item"><a href="#contact" class="nav-link" style="color: white;">Contact</a></li>
+      </ul>
     </div>
-  </header>
+  </div>
+</nav>
 
-  <section class="hero position-relative text-center text-white">
-  <video autoplay muted loop playsinline class="hero-video">
-    <source src="videos/banner.mp4" type="video/mp4">
+<!-- Hero Section -->
+<section class="hero-video">
+  <video autoplay muted loop playsinline>
+    <source src="videos/digital1.mp4" type="video/mp4">
     Your browser does not support the video tag.
   </video>
-  <div class="hero-overlay">
-    <h1>We Scale Brands with Digital Marketing</h1>
-    <p>Performance-driven digital marketing for small businesses and Instagram sellers worldwide.</p>
-    <div class="cta-buttons">
-      <a href="https://wa.me/917667924881" target="_blank">Chat on WhatsApp</a>
+  <div class="video-content text-center text-white">
+    <div class="container1" >
+      <h1>Grow Your Business with Digital Marketing</h1>
+      <p>SEO, Social Media, Google Ads & More — All in One Place</p>
+      <a href="mailto:info@brainwaystechllp.com" class="btn btn-warning mt-4">Get a Free Consultation</a>
+    </div>
+  </div>
+</section>
+
+<!-- Services -->
+<section class="py-5" id="services">
+  <div class="container text-center">
+    <h2 class="text-orange mb-5">Our Digital Marketing Services</h2>
+    <div class="row">
+      <div class="col-md-4 mb-4">
+        <div class="service-box">
+          <h5>Search Engine Optimization</h5>
+          <p>Boost your website ranking and visibility with proven SEO strategies.</p>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="service-box">
+          <h5>Social Media Marketing</h5>
+          <p>Build your brand and engage customers through social platforms.</p>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="service-box">
+          <h5>Google Ads</h5>
+          <p>Reach high-converting customers with powerful Google Ads campaigns.</p>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="service-box">
+          <h5>Content Marketing</h5>
+          <p>Create valuable content that attracts and retains a clearly-defined audience.</p>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="service-box">
+          <h5>Email Marketing</h5>
+          <p>Drive conversions with personalized and targeted email campaigns.</p>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="service-box">
+          <h5>Website Development</h5>
+          <p>Professional websites optimized for performance and conversions.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--samples-->
+<section class="samples py-5 bg-light" id="samples">
+  <div class="container text-center">
+    <h2 class="text-orange mb-4">Our Sample Work</h2>
+    <p class="mb-5">Take a look at some of our successful digital marketing campaigns</p>
     
+    <div class="row">
+      <div class="col-md-4 mb-4">
+        <div class="sample-box">
+          <video controls width="100%" class="rounded shadow-sm">
+            <source src="sample1.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <h6 class="mt-3">Instagram Ad Campaign</h6>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="sample-box">
+          <video controls width="100%" class="rounded shadow-sm">
+            <source src="sample2.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <h6 class="mt-3">YouTube Promo Video</h6>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="sample-box">
+          <video controls width="100%" class="rounded shadow-sm">
+            <source src="sample3.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <h6 class="mt-3">Google Display Banner</h6>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="testimonials" class="py-5 bg-white">
+  <div class="container text-center">
+    <h2 class="text-warning mb-5 font-weight-bold">
+      Here are a few more testimonials from our happy customers
+    </h2>
+
+    <div id="premiumTestimonialCarousel" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+
+        <!-- Testimonial 1 -->
+        <div class="carousel-item active">
+          <div class="row align-items-center justify-content-center">
+            <div class="col-md-3">
+              <div class="testimonial-img-wrapper mx-auto">
+                <img src="images/client1.jpg" alt="Client 1" class="rounded-circle img-fluid border-orange shadow">
+              </div>
+            </div>
+            <div class="col-md-7">
+              <p class="lead font-italic">
+                “I’m really impressed with the results you have delivered. The way you work your magic has made a big difference in our campaigns.”
+              </p>
+              <h5 class="font-weight-bold text-muted mt-4">
+                — Dr. Blake Bush, Owner & Optometrist at Blake Bush Family Eye Care
+              </h5>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonial 2 -->
+        <div class="carousel-item">
+          <div class="row align-items-center justify-content-center">
+            <div class="col-md-3">
+              <div class="testimonial-img-wrapper mx-auto">
+                <img src="images/client2.jpg" alt="Client 2" class="rounded-circle img-fluid border-orange shadow">
+              </div>
+            </div>
+            <div class="col-md-7">
+              <p class="lead font-italic">
+                “Your SEO strategy helped us dominate local search rankings in less than 60 days.”
+              </p>
+              <h5 class="font-weight-bold text-muted mt-4">
+                — Sarah Lee, Marketing Head at QuickKart
+              </h5>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonial 3 -->
+        <div class="carousel-item">
+          <div class="row align-items-center justify-content-center">
+            <div class="col-md-3">
+              <div class="testimonial-img-wrapper mx-auto">
+                <img src="images/client3.jpg" alt="Client 3" class="rounded-circle img-fluid border-orange shadow">
+              </div>
+            </div>
+            <div class="col-md-7">
+              <p class="lead font-italic">
+                “From ad copy to design, everything was just perfect. Conversions increased by 45%.”
+              </p>
+              <h5 class="font-weight-bold text-muted mt-4">
+                — Arjun Mehta, CEO at ByteLabs Pvt Ltd
+              </h5>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Controls -->
+      <a class="carousel-control-prev" href="#premiumTestimonialCarousel" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon bg-dark rounded-circle" aria-hidden="true"></span>
+      </a>
+      <a class="carousel-control-next" href="#premiumTestimonialCarousel" role="button" data-slide="next">
+        <span class="carousel-control-next-icon bg-dark rounded-circle" aria-hidden="true"></span>
+      </a>
     </div>
   </div>
 </section>
 
 
-   <section id="about" class="about">
-    <h2>Igniting Brands That Spark Movements</h2>
-    <div class="container">
-      <p class="text-center">
-        At <b>Brainwaystech LLP</b>, we’re passionate about transforming ideas into innovative digital solutions. With a focus on excellence and customer satisfaction, we strive to exceed expectations with every project. Our team of skilled professionals brings a wealth of experience and expertise to the table, ensuring that we deliver high-quality results tailored to your unique needs. From web development to app development and beyond, we’re dedicated to helping you achieve your digital goals and drive success in today’s competitive landscape. Partner with us and experience the difference of working with a trusted technology partner.
-      </p>
-      <br>
-      <h5 class="text-center font-weight-bold">Our Mission</h5>
-      <p class="text-center">To provide cutting-edge digital solutions that exceed client expectations, foster innovation, and drive growth. We are committed to delivering excellence.</p>
-      <h5 class="text-center font-weight-bold">Our Vision</h5>
-      <p class="text-center">To be a leading innovator in the digital landscape, driving positive change through technology and empowering businesses to thrive in the digital age.</p>
-    </div>
-  </section>
 
-  <section id="services" class="services">
-    <h2>Our Services</h2>
-    <div class="container services-grid">
-      <div class="service-item">
-        <centre><img src="images/seo.jpg" alt="SEO Services"></centre>
-        <h3>Search Engine Optimization (SEO)</h3>
-        <p>Improve your website’s visibility on Google with our powerful SEO strategies. Rank higher and attract organic traffic consistently.</p>
-      </div>
-      <div class="service-item">
-        <centre><img src="images/smm.jpg" alt="Social Media Marketing"></centre>
-        <h3>Social Media Marketing & Management</h3>
-        <p>Grow your social presence across platforms like Instagram, Facebook & LinkedIn with curated content, engagement, and brand consistency.</p>
-      </div>
-      <div class="service-item">
-        <centre><img src="images/googleads.jpg" alt="Google Ads"></centre>
-        <h3>Google Ads</h3>
-        <p>Drive instant leads and traffic through our expertly managed Google Ads campaigns tailored to your business goals.</p>
-      </div>
-      <div class="service-item">
-        <centre><img src="images/metaad.jpg" alt="Meta Ads"></centre>
-        <h3>Meta Ads (Facebook & Instagram)</h3>
-        <p>Capture attention and convert clicks using powerful ad creatives across Facebook and Instagram with advanced targeting.</p>
-      </div>
-      <div class="service-item">
-        <centre><img src="images/influencer.jpg" alt="Influencer Marketing"></centre>
-        <h3>Influencer Marketing</h3>
-        <p>Partner with the right voices in your niche. We connect you with influencers who drive authentic engagement and sales.</p>
-      </div>
-    </div>
-  </section>
-
-  <section id="contact" class="contact">
-    <h2>Contact Us</h2>
-    <div class="text-center">
-      <p><strong>Email:</strong> <a href="mailto:info@brainwaystechllp.com">info@brainwaystechllp.com</a></p>
-      <p><strong>Phone/WhatsApp:</strong> <a href="tel:+917667924881 / +919361061592">+91 76679 24881 / +91 93610 61592</a></p>
-      <p><strong>Instagram:</strong> <a href="https://www.instagram.com/brainwaystech.ai/" target="_blank">Visit Here</a></p>
-      <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/mugilesh-r-8b35402b4" target="_blank">Visit Here</a></p>
-      <p><strong>Location:</strong> Krishnagiri, India</p>
-      <a class="google-form-btn mt-4" href="https://forms.gle/1esCBAsyBMK8S4i36" target="_blank">Submit Your Requirement</a>
-    </div>
-  </section>
-
-  <footer>
+<!-- Contact -->
+<section class="bg-light py-5" id="contact">
   <div class="container">
-    <div class="row">
-      <div class="col-md-6 text-left mb-3 mb-md-0">
-        <p><strong>BRAINWAYSTECH LLP</strong><br>
-        216b, Salem Main Road,<br>
-        Krishnagiri, Tamilnadu - 635001, India<br>
-        Email: info@brainwaystechllp.com<br>
-        Phone: +91-7667924881<br>
-        Phone: +91-9361061592</p>
-      </div>
-      <div class="col-md-6 text-md-right">
-        <p>Follow us on:</p>
-        <div class="social-links">
-          <a href="https://www.instagram.com/brainwaystech.ai/" target="_blank"><i class="fab fa-instagram fa-lg"></i></a>
-          <a href="https://www.linkedin.com/in/mugilesh-r-8b35402b4" target="_blank"><i class="fab fa-linkedin fa-lg"></i></a>
-          <a href="mailto:info@brainwaystechllp.com"><i class="fas fa-envelope fa-lg"></i></a>
+    <h2 class="text-center text-orange mb-4">Contact Us</h2>
+    <form onsubmit="return sendToWhatsApp();">
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label>Name</label>
+          <input type="text" id="name" class="form-control" required>
+        </div>
+        <div class="form-group col-md-6">
+          <label>Email</label>
+          <input type="email" id="email" class="form-control" required>
         </div>
       </div>
+      <div class="form-group">
+        <label>Service Interested In</label>
+        <select id="service" class="form-control" required>
+          <option value="">-- Select a Service --</option>
+          <option>SEO</option>
+          <option>Social Media Marketing</option>
+          <option>Meta Ads</option>
+          <option>Google Ads</option>
+          <option>Website Development</option>
+          <option>Content Marketing</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>Your Message</label>
+        <textarea id="message" rows="4" class="form-control" required></textarea>
+      </div>
+      <button type="submit" class="btn btn-whatsapp btn-block btn-lg">
+        Send via WhatsApp <i class="fab fa-whatsapp ml-1"></i>
+      </button>
+    </form>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <div class="container">
+    <p>BrainwaysTech LLP | Digital Marketing Services</p>
+    <p>Email: support@brainwaystech.in | Phone: +91-9876543210</p>
+    <div class="social mb-2">
+      <a href="#"><i class="fab fa-facebook"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-linkedin"></i></a>
     </div>
-    <hr style="border-color: rgba(0, 0, 0, 0.2);">
-    <p class="mb-0">© 2025 BRAINWAYSTECH LLP. All rights reserved.</p>
+    <hr style="background-color: rgba(255,255,255,0.2);">
+    <p class="mb-0 small">&copy; 2025 BrainwaysTech LLP. All rights reserved.</p>
   </div>
 </footer>
+
+<!-- JS -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+
+<script>
+  function sendToWhatsApp() {
+    const name = document.getElementById("name").value.trim();
+    const email = document.getElementById("email").value.trim();
+    const service = document.getElementById("service").value;
+    const message = document.getElementById("message").value.trim();
+
+    const number = "917667924881"; // Replace with your WhatsApp number
+    const msg = `New Digital Marketing Inquiry\n\n*Name:* ${name}\n*Email:* ${email}\n*Service:* ${service}\n*Message:* ${message}`;
+    window.open(`https://wa.me/${number}?text=${encodeURIComponent(msg)}`, '_blank');
+    return false;
+  }
+</script>
+
 </body>
 </html>
-
